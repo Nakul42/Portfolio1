@@ -1,6 +1,6 @@
 <div class="bg-background relative">
   <div class="mx-auto px-5">
-    <div class="flex items-center justify-between py-3.5 md:justify-start">
+    <div class="flex items-center justify-between py-2 md:justify-start">
       <!-- Mobile Navigation Menu Button-->
       <div class="sm:order-1 md:hidden">
         <button
@@ -29,6 +29,19 @@
 
       <!-- Profile menu -->
       <div class="items-center justify-end sm:order-4 md:flex md:flex-1 lg:w-0">
+        <div
+          class="nav-items flex items-center justify-center gap-6 text-[16px] text-[rgb(200,200,200)] shadow-lg">
+          <div class="nav-items-list flex items-center justify-center gap-6">
+            <a href="#about" class="font-medium transition-colors duration-300 hover:text-white">About Me</a>
+            <a href="#resume" class="font-medium transition-colors duration-300 hover:text-white">Resume</a>
+            <a href="#contact" class="font-medium transition-colors duration-300 hover:text-white">Contact Me</a>
+          </div>
+          <div class="nav-items-button cart flex items-center justify-center gap-6 mr-2">
+            <a href="#collaborate" class="font-medium transition-colors duration-300 hover:text-white">Collaborate</a>
+            <a href="#hire" class="font-medium transition-colors duration-300 hover:text-white">Hire Me</a>
+          </div>
+        </div>
+
         <app-profile-menu></app-profile-menu>
       </div>
     </div>
