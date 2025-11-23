@@ -2,7 +2,7 @@
   <div class="mx-auto px-5">
     <div class="flex items-center justify-between py-2 md:justify-start">
       <!-- Mobile Navigation Menu Button-->
-      <div class="sm:order-1 md:hidden">
+      <div class="sm:order-1 lg:hidden">
         <button
           (click)="toggleMobileMenu()"
           type="button"
@@ -14,14 +14,6 @@
         </button>
       </div>
 
-      <!-- Logo -->
-      <div class="flex items-center justify-start gap-3 sm:order-2 ltr:md:mr-10 rtl:md:ml-10 lg:hidden">
-        <a class="bg-primary flex items-center justify-center rounded-sm p-2 focus:outline-hidden focus:ring-1">
-          <svg-icon src="assets/icons/logo.svg"></svg-icon>
-        </a>
-        <b class="text-foreground hidden text-sm font-bold sm:block"> Angular Tailwind </b>
-      </div>
-
       <!-- Desktop Menu -->
       <div class="hidden space-x-10 sm:order-3 md:flex">
         <app-navbar-menu></app-navbar-menu>
@@ -30,13 +22,13 @@
       <!-- Profile menu -->
       <div class="items-center justify-end sm:order-4 md:flex md:flex-1 lg:w-0">
         <div
-          class="nav-items flex items-center justify-center gap-6 text-[16px] text-[rgb(200,200,200)] shadow-lg">
+          class="nav-items hidden items-center justify-center gap-6 text-[16px] text-[rgb(200,200,200)] shadow-lg lg:flex">
           <div class="nav-items-list flex items-center justify-center gap-6">
             <a href="#about" class="font-medium transition-colors duration-300 hover:text-white">About Me</a>
             <a href="#resume" class="font-medium transition-colors duration-300 hover:text-white">Resume</a>
             <a href="#contact" class="font-medium transition-colors duration-300 hover:text-white">Contact Me</a>
           </div>
-          <div class="nav-items-button cart flex items-center justify-center gap-6 mr-2">
+          <div class="nav-items-button cart mr-2 flex items-center justify-center gap-6">
             <a href="#collaborate" class="font-medium transition-colors duration-300 hover:text-white">Collaborate</a>
             <a href="#hire" class="font-medium transition-colors duration-300 hover:text-white">Hire Me</a>
           </div>
@@ -46,6 +38,4 @@
       </div>
     </div>
   </div>
-  <!-- Mobile menu -->
-  <app-navbar-mobile></app-navbar-mobile>
 </div>
