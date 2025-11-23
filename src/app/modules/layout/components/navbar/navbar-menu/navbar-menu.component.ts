@@ -36,3 +36,4 @@ export class NavbarMenuComponent implements OnInit {
     }
   }
 }
+
